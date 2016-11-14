@@ -3,7 +3,8 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 LOCAL_ARM_MODE := arm
 LOCAL_MODULE := App
-LOCAL_SRC_FILES += Wrappers.cpp
+LOCAL_C_INCLUDES += \ ../..
+LOCAL_SRC_FILES += Wrappers.cpp ../main.cpp
 LOCAL_ARM_MODE := arm
 COMMON_CFLAGS := -Werror -DANDROID -DDISABLE_IMPORTGL
 #-isystem $(SYSROOT)/usr/include/
